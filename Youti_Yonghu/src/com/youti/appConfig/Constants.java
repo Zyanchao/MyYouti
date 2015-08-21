@@ -10,8 +10,10 @@ public class Constants {
 	/**环信 客服 im 号**/
 	public final static String  CHAT_KEFU_NAME1 = "yoti_kefu1";
 	public final static String  CHAT_KEFU_NAME = "优体客服";
-	/**环信 客服 im 号**/
+	/**环信 客服  号**/
 	public final static String  CHAT_KEFU_NAME2 = "yoti_kefu2";
+	
+	
 	
 	/**环信 客服 im 号**/
 	public final static String  CHAT_XITONG_TONGZHI = "xitongxiaoxi";
