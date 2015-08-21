@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/x270"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/x20"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+   >
+
+    <ImageView
+        android:id="@+id/kc_Img"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x250"
+        android:scaleType="fitXY"       
+          />
+    <!-- android:background="@drawable/userhome_pic" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/x250"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/coach_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李里军"
+                android:textStyle="bold"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/coach_tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:gravity="right"
+                android:layout_marginLeft="5dp"
+                android:text="120元"
+                android:textColor="#6049a1"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="/小时"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/x28" />
+        </LinearLayout>
+
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x34"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目:"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="@dimen/x30" />
+            
+            <TextView
+                android:id="@+id/coach_tv_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:text="网球"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/coach_tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:drawableLeft="@drawable/kc_location"
+                android:text=" 2.53km"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/x27" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x24"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签名:"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/coach_tv_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.68"
+                android:lines="2"
+                android:text="坚持锻炼是人生最好的生活方式。。坚持锻炼是人生最好的生活方式。。。坚持锻炼是人生最好的生活方式。。。。"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/x30" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView 
+	        android:id="@+id/cancel"
+	        android:padding="@dimen/x20"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancel"
+	        android:textColor="#333333"
+	        android:textSize="@dimen/x40"
+	        />
+	    <TextView 
+	        android:id="@+id/issue"
+	        android:padding="@dimen/x20"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:textSize="@dimen/x40"
+	        android:textColor="#6049a1"
+	        android:text="发布"
+	        />
+	</RelativeLayout>
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/wdjl_fengexian"
+	    />
+	<TextView 
+	    android:gravity="center_vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/x100"
+	    android:text="本次课程已结束，请对本次课程做出评论。"
+	    android:textColor="#666666"
+	    android:textSize="15sp"
+	    android:layout_marginLeft="@dimen/x20"
+	    />
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/wdjl_fengexian"
+	    />
+	<RadioGroup 
+	    android:id="@+id/rg"
+	    android:gravity="center_vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/x110"
+	    android:orientation="horizontal"
+	    android:paddingLeft="@dimen/x50"
+	    android:paddingRight="@dimen/x50"
+	    >
+	    <RadioButton 
+	        android:id="@+id/rb_great"
+	        android:textSize="@dimen/x30"
+	        android:gravity="center"
+	        android:button="@null"
+	        android:checked="true"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/great"
+	        android:textColor="#333333"
+	        android:background="@drawable/selector_pinglun"
+	        />
+	     <RadioButton 
+	         android:id="@+id/rb_middle"
+	         android:textSize="@dimen/x30"
+	         android:layout_marginLeft="@dimen/x110"
+	         android:layout_marginRight="@dimen/x110"
+	         
+	         android:gravity="center"
+	         android:textColor="#333333"
+	         android:button="@null"
+	         android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/middle"
+	        android:background="@drawable/selector_pinglun"
+	        />
+	      <RadioButton 
+	          android:id="@+id/rb_bad"
+	          android:gravity="center"
+	          android:textSize="@dimen/x30"
+	          android:textColor="#333333"
+	          android:button="@null"
+	          android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/bad"
+	        android:background="@drawable/selector_pinglun"
+	        />
+	</RadioGroup>
+	
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/wdjl_fengexian"
+	    />
+	
+	<EditText
+	    android:paddingLeft="@dimen/x20"
+	    android:id="@+id/et_comment"
+	    android:gravity="top"
+	    android:textColorHint="#666666"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@null"
+	    android:lines="5"
+	    android:hint="@string/pinglunhint"
+	    />
+	
+	 <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="12dip" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:gravity="center_vertical"
+                android:minHeight="76dip"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <edu.hust.ui.base.LineBreakGroup
+                    android:id="@+id/image_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36dip" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+        </LinearLayout>
+</LinearLayout>

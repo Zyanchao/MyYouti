@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sq_addbox"
+    
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="@dimen/x10"
+        android:id="@+id/tv_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sq_addbox_h"
+        android:drawableLeft="@drawable/sq_camera"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x10"
+        android:text="@string/issuephoto"
+        android:textColor="#6049a1" />
+
+	<TextView 
+	    android:drawablePadding="@dimen/x35"
+	    android:layout_weight="1"
+	    android:paddingLeft="@dimen/x10"
+	    android:gravity="center"
+	    android:drawableLeft="@drawable/sq_photo"
+	    android:textColor="#6049a1"
+	    android:text="@string/issued"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/tv_issueed"
+	    />
+</LinearLayout>

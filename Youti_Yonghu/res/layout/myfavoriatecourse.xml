@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x320"
+    android:minHeight="@dimen/x320"
+    android:background="@drawable/ke_ticket"
+    android:orientation="horizontal">
+	
+	<LinearLayout
+	    android:layout_marginTop="@dimen/x10"
+	    android:layout_marginLeft="@dimen/x30"
+	    android:layout_width="@dimen/x470"
+	    android:layout_height="@dimen/x270"
+	   
+	    android:orientation="horizontal" >
+	    
+	    <RelativeLayout
+	    
+        android:id="@+id/sp_bigImg"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+       
+         >
+		<ImageView 
+		    
+		    android:id="@+id/kc_Img"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:scaleType="fitXY"
+	         android:src="@drawable/spxq_pic"
+		    />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxWidth="90dp"
+            android:singleLine="true"
+            android:text="这是一个说明文字"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/TextSize_16" />
+        
+        
+		<LinearLayout 
+		    android:layout_marginRight="@dimen/x10"
+		    android:layout_marginBottom="@dimen/x10"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/ll"
+		    android:orientation="horizontal"
+		    android:layout_alignBottom="@id/kc_Img"
+             android:layout_alignRight="@id/kc_Img"
+		    >
+		    
+         <ImageView
+             android:id="@+id/iv_heart"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="15dp"
+             android:src="@drawable/spxq_heart_h" />
+
+         <TextView
+             android:id="@+id/tv_num"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"          
+             android:text="0"
+             android:textColor="#666666"
+             android:visibility="visible" />
+		</LinearLayout>
+
+    </RelativeLayout>
+   
+	</LinearLayout>
+	 
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+         android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+            android:id="@+id/kc_studyCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_yellow_textview"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="0人学过"
+            android:textColor="#6049a1"
+            android:textSize="@dimen/TextSize_13" />
+
+        <TextView
+             android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+            android:id="@+id/kc_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0元"
+            android:textColor="#6049a1"
+            android:textSize="@dimen/TextSize_18" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kc_clock" />
+
+            <TextView
+                android:id="@+id/kc_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:textColor="@color/text_color_dark_grey"
+                android:gravity="center"
+                android:text="00-00-00:00"
+                android:textSize="@dimen/TextSize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:layout_marginBottom="@dimen/x20"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kc_location" />
+
+            <TextView
+                android:id="@+id/kc_location_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:textColor="@color/text_color_dark_grey"
+                android:text="2.53km"
+                android:textSize="@dimen/TextSize_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

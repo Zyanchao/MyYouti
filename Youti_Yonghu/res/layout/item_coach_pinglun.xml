@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_pinglun" />
+    
+
+     <LinearLayout
+            android:id="@+id/viewGroup"
+            android:paddingLeft="@dimen/x100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.youti.view.MGridView
+                android:id="@+id/gv_pinglin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+                android:numColumns="5" >
+            </com.youti.view.MGridView>
+        </LinearLayout>
+    
+    </LinearLayout>
+

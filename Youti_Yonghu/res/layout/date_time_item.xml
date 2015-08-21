@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x190"
+    android:layout_height="@dimen/x110"
+    android:id="@+id/rl_time_item"
+    android:background="@drawable/jlxq_sjb1"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/Tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:text="19:00"
+        android:textColor="#d1d1d1" />
+
+    
+    <ImageView 
+        
+        android:id="@+id/iv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/jlxq_sjb4"
+        />
+   
+</RelativeLayout>

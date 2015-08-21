@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/x20"
+    android:paddingTop="@dimen/x20" >
+
+    <ImageView
+        android:id="@+id/kc_Img"
+        android:layout_width="@dimen/x240"
+        android:layout_height="@dimen/x150"
+        android:scaleType="fitXY"
+        android:background="@drawable/userhome_pic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20" >
+
+        <TextView
+            android:id="@+id/tv_other_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x10"
+            android:text="课程名称"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/x30" />
+
+        <TextView
+            android:id="@+id/tv_other_course_jianjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:maxLines="2"
+            android:scrollHorizontally="false"
+            android:text="课程简介一对多 舞蹈课程"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/x27" />
+    </LinearLayout>
+
+</LinearLayout>

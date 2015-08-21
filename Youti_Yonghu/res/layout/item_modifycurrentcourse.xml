@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x320"
+    android:background="@drawable/ke_ticket"
+    android:minHeight="@dimen/x320"
+    android:orientation="horizontal"
+     >
+
+    <LinearLayout
+        
+         android:layout_width="@dimen/x450"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/x20"
+            android:id="@+id/iv_course"
+            android:layout_width="@dimen/x450"
+            android:layout_height="@dimen/x240"
+            android:layout_marginTop="@dimen/x24"
+            android:layout_marginBottom="@dimen/x48"
+            android:background="@drawable/default_photo"
+            />
+    </LinearLayout>
+
+  <LinearLayout
+       android:layout_marginLeft="@dimen/x30"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:paddingTop="@dimen/x36"
+            android:layout_weight="3"
+            android:id="@+id/currentcourse_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="健身秘诀"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+             android:layout_weight="3"
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/booked"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/x40"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wdkc_time"
+            android:text="04-10-18:00"
+            android:textColor="#3b3b3b"
+            android:textSize="14sp" />
+
+
+      
+    </LinearLayout>
+
+</LinearLayout>

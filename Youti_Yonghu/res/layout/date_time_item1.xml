@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:minHeight="@dimen/x110"   
+	android:id="@+id/rl_time_item"
+    android:background="@drawable/jlxq_sjb1"
+    android:gravity="center_vertical"
+    >
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    >
+	    
+	  <TextView
+        android:id="@+id/Tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x50"
+        android:textSize="16sp"
+        android:text="AM19:00-20:00"
+        android:textColor="#cccccc" />
+		
+	     <TextView 
+	          android:textColor="#cccccc" 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:id="@+id/tv_busy"
+	         android:textSize="16sp"
+	         android:text="空闲"
+	         />
+    	<CheckBox 
+    	    android:id="@+id/cb"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    style="@style/MyCheckBox"
+    	     android:clickable="false"
+       		 android:focusable="false"
+        	android:focusableInTouchMode="false"
+    	    />
+	</LinearLayout>
+   <ImageView
+       android:layout_centerVertical="true"
+        android:id="@+id/iv_time"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x38"
+        android:background="@drawable/yksjb_select2" />
+   
+   
+</RelativeLayout>

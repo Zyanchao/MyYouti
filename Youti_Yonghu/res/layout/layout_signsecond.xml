@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="@drawable/login_icon_back" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x80"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:id="@+id/et_yanzhengma"
+            android:background="@drawable/login_inputbar"
+            android:hint="验证码已发送，请输入"
+            android:paddingLeft="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#bbbbbb"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/sendagain"
+             android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_button_little"
+            android:text="重新发送(50)" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/recomcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x5"
+        android:background="@drawable/login_inputbar"
+        android:hint="@string/recomcode"
+        android:paddingLeft="15dp"
+        android:textColorHint="#bbbbbb"
+        android:textSize="15sp" />
+
+    <Button
+      android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x80"
+        android:background="@drawable/login_button_next"
+        android:text="@string/finish"
+        android:textSize="18sp" />
+
+</LinearLayout>

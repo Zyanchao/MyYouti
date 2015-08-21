@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/x80"
+    android:minHeight="@dimen/x80"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" 
+    android:background="#ffffff"
+     >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/pinglun_zan_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <com.youti.view.CircleImageView1
+            android:visibility="gone"
+            android:id="@+id/iv_user_head" 
+            android:layout_width="@dimen/x40"
+        	android:layout_height="@dimen/x40"
+            
+            />
+       
+    </LinearLayout>
+
+     <LinearLayout
+            android:id="@+id/pinglun_zan_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.youti.view.MGridView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"                
+                android:numColumns="6" >
+            </com.youti.view.MGridView>
+        </LinearLayout>
+    
+    <LinearLayout
+        
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" >
+		
+        <LinearLayout 
+            android:id="@+id/ll_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+              <ImageView
+            android:id="@+id/zan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sp_heart_h"
+             />
+
+        <TextView
+            android:id="@+id/zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_12"
+            android:gravity="center"
+            android:paddingLeft="@dimen/Padding_4"
+            android:text="100"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/TextSize_14" />
+            
+        </LinearLayout>
+           
+       <LinearLayout 
+           android:id="@+id/ll_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            >
+        <ImageView
+            android:id="@+id/pinglun_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/pinglun"
+            android:background="@drawable/sp_pl"
+            />
+
+        <TextView
+            android:id="@+id/pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/Padding_4"
+            android:text="012"
+            android:textColor="@color/text_color_dark_grey"
+            android:textSize="@dimen/TextSize_14" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    
+    
+   <!--  <LinearLayout 
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        >
+        <View 
+            android:layout_width="fill_parent"
+             android:layout_height="@dimen/x10"
+        android:background="#f0f0f0"
+            />
+        
+    </LinearLayout> -->
+
+</LinearLayout>

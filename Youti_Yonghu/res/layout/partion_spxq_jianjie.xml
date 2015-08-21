@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.youti.view.CircleImageView1
+            android:id="@+id/spxq_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:src="@drawable/spxq_head" />
+
+        <TextView
+            android:id="@+id/spxq_coach_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/spxq_head"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:textColor="@color/main_primary"
+            android:textSize="@dimen/TextSize_20" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:animateLayoutChanges="true" >
+
+        <TextView
+            android:id="@+id/jl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="16dp"
+            android:text="教练简介："
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/TextSize_16" />
+
+        <TextView
+            android:id="@+id/jlcontent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jl_title"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容"
+            android:textColor="@color/main_primary"
+            android:textSize="@dimen/TextSize_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:animateLayoutChanges="true" >
+
+        <TextView
+            android:id="@+id/kc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/Padding_16"
+            android:text="课程简介："
+            android:textSize="@dimen/TextSize_16" />
+
+        <TextView
+            android:id="@+id/kccontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kc_title"
+            android:ellipsize="end"
+            android:maxWidth="160dp"
+            android:singleLine="true"
+            android:text="这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容这是教练介绍内容"
+            android:textColor="@color/main_primary"
+            android:textSize="@dimen/TextSize_16" />
+
+        <ImageView
+            android:id="@+id/contentShowControl"
+            android:layout_width="@dimen/ViewWidth_22"
+            android:layout_height="@dimen/ViewWidth_22"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@drawable/spxq_arrow"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</LinearLayout>

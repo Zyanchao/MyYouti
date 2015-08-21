@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youti.view.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/x320" >
+
+    <com.youti.view.FrontLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x320"
+            android:background="@drawable/ke_ticket"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/x450"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_course"
+                     android:layout_width="@dimen/x450"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x48"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x24"
+                    android:background="@drawable/default_class" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/currentcourse_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="3"
+                    android:paddingTop="@dimen/x36"
+                    android:text="健身秘诀"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="3"
+                    android:text="@string/booked"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x40"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/wdkc_time"
+                    android:gravity="center_vertical"
+                    android:text="04-10-18:00"
+                    android:textColor="#3b3b3b"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.youti.view.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x300"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="@dimen/x300"
+            android:layout_height="fill_parent"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="@dimen/x300"
+            android:layout_height="fill_parent"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</com.youti.view.SwipeLayout>

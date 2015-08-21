@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/x208"
+    android:background="#ffffff"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/delete_movie" >
+
+        <ImageView
+           
+            android:id="@+id/movie_headimage"
+            android:layout_width="@dimen/x340"
+            android:layout_height="@dimen/x168"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/spxq_pic" />
+
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/movie_name_item"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/movie_headimage"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/movie_headimage"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="镇关西"
+            android:textColor="#333333"
+             />
+
+        <ProgressBar
+            android:focusable="false"
+            android:visibility="invisible"
+            android:id="@+id/download_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_alignBottom="@+id/movie_headimage"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/movie_headimage"
+            android:progressDrawable="@drawable/progress_bg" />
+
+        <CheckBox
+            android:id="@+id/movie_headiamge_checkbox"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignLeft="@+id/movie_headimage"
+            android:layout_alignTop="@+id/movie_headimage"
+            android:layout_marginLeft="0.5dp"
+            android:button="@drawable/movie_headimage_selector"
+            android:visibility="gone" />
+		
+        <TextView
+            
+            android:id="@+id/movie_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/movie_name_item"
+            android:layout_below="@+id/movie_name_item"
+            android:text="0M/435M"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/stop_download_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/movie_file_size"
+            android:layout_alignBottom="@+id/movie_file_size"
+            android:layout_alignRight="@+id/movie_headimage"
+            android:layout_marginRight="57dp"
+            android:background="@drawable/stop"
+            android:focusable="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/current_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/movie_headimage"
+            android:layout_alignRight="@+id/movie_name_item"
+            android:text="下载中：100%"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fc2727"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/delete_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/delete_movie_bg" />
+
+</RelativeLayout>

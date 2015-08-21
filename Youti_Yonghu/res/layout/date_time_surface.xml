@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:youti="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.youti.view.TitleBar
+        android:id="@+id/index_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        youti:titleText="@string/left_menu_kc" >
+    </com.youti.view.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="当前订单可用时长："
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_hourable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小时"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+        <Button 
+            android:background="@drawable/login_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:text="确认约课时间"
+			android:id="@+id/btn_sure"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/yksjb_shang" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_1"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周一" />
+
+                    <TextView
+                        android:id="@+id/tv_date1"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_2"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周二" />
+
+                    <TextView
+                        android:id="@+id/tv_date2"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_3"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_3"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周三" />
+
+                    <TextView
+                        android:id="@+id/tv_date3"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_4"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_4"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周四" />
+
+                    <TextView
+                        android:id="@+id/tv_date4"
+                       android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_5"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_5"
+                       android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周五" />
+
+                    <TextView
+                        android:id="@+id/tv_date5"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                </LinearLayout>
+            </RelativeLayout>
+
+             <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_6"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_6"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周六" />
+                   
+                        <TextView
+                        android:id="@+id/tv_date6"
+                            android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                         
+                    
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rl_7"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_buttom_date_time"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Tv_7"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周日" />
+
+                    <TextView
+                        android:id="@+id/tv_date7"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06-01" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1px"
+                android:background="#cccccc" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/yksjb_xia" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1px"
+            android:listSelector="#cccccc" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

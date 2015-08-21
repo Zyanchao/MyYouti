@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:youti="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_below="@id/index_titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/current_position"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home_searchbar"
+             >
+
+            <ImageView
+                android:id="@+id/im_search"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x70"
+                android:background="@drawable/home_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="@dimen/x450"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x60"
+                android:layout_toLeftOf="@id/im_search"
+                android:background="#FFFFFF"
+                android:gravity="left"
+                android:hint="搜索项目或教练名称"
+                android:textColor="#c9c9c9"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

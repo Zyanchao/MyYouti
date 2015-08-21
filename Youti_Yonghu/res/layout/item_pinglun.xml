@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_comment"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:padding="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:orientation="horizontal" >
+			
+            <com.youti.view.CircleImageView1
+	    	  android:layout_marginRight="@dimen/x10"
+            	android:id="@+id/iv"
+           	 	android:minHeight="30dp"
+           	 	android:minWidth="30dp"
+            	android:layout_width="@dimen/x60"
+           		android:layout_height="@dimen/x60"
+            	android:src="@drawable/widget_dface"
+            	android:layout_gravity="center_horizontal"
+            />
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+				
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菲菲"
+                android:textColor="#6049a1" />
+			
+            
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:text="4-15 13:55" />
+            </RelativeLayout>
+            
+     
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:textColor="#333333"
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很赞啊，看了好几遍" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

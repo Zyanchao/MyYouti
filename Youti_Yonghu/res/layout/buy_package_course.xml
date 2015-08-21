@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:youti="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    android:orientation="vertical" >
+
+    <com.youti.view.TitleBar
+        android:id="@+id/index_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        youti:btnShareVisible="false"
+        youti:btnsearchVisible="true"
+        youti:titleText="@string/kc_99" >
+    </com.youti.view.TitleBar>
+
+    
+    <include layout="@layout/divider"/>
+    <ScrollView
+        
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/index_titlebar"
+        android:layout_above="@+id/ll_bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                android:textSize="@dimen/x32"
+                android:text="产品说明:"
+                android:textColor="@color/tabbar_item_text_normal" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:textSize="@dimen/x30"
+                android:lineSpacingExtra="@dimen/x10"
+                android:lineSpacingMultiplier="1.2"
+                android:text="99通卡，购买后会员可以体验所有课程，超值实惠，优惠多多，欢迎学员体验购买，购买后会员可以体验所有课程，超值实惠，优惠多多，欢迎学员体验购买"
+                android:textColor="@color/main_primary" />
+
+             <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:background="#F0F0F0"
+                />
+            
+            
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:text="选择优惠包"
+                android:textSize="@dimen/x30"
+                android:textColor="@color/main_primary" />
+            
+             
+              <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+            
+           <LinearLayout
+               android:id="@+id/ll_1yue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_1yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:layout_gravity="center_vertical"
+                    android:text="30天只要99元"
+                    android:textSize="@dimen/x30"
+                    android:textColor="@color/main_primary" />
+
+                <ImageView
+                        android:id="@+id/iv_1yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+            </LinearLayout>
+
+           
+             
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+            
+           <LinearLayout
+               android:id="@+id/ll_3yue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_3yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:layout_gravity="center_vertical"
+                    android:text="60天只要259元"
+                    android:textSize="@dimen/x30"
+                    android:textColor="@color/main_primary" />
+
+                <ImageView
+                        android:id="@+id/iv_3yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+            </LinearLayout>
+
+           
+           <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+           
+            <LinearLayout
+                android:id="@+id/ll_6yue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_6yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:layout_gravity="center_vertical"
+                    android:text="180天只要459元"
+                    android:textSize="@dimen/x30"
+                    android:textColor="@color/main_primary" />
+
+                <ImageView
+                        android:id="@+id/iv_6yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+            </LinearLayout> 
+
+            
+			<View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:background="#F0F0F0"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_youhuiquan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用优惠券"
+                    android:textColor="@color/text_font_purple" />
+
+                  <TextView
+                    android:id="@+id/tv_youhuiquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/x20"
+                    android:layout_toLeftOf="@+id/bt_buy"
+                    android:textColor="@color/text_font_purple" />
+                
+                <Button
+                    android:id="@+id/bt_buy"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/buy_arrow" />
+            </RelativeLayout>
+
+            
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择支付方式"
+                    android:textColor="@color/tabbar_item_text_normal" />
+                
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/x10"
+                     android:layout_marginRight="@dimen/x20"
+                     android:layout_marginTop="@dimen/x20"
+                     android:orientation="horizontal" >
+
+                     <ImageView
+                         android:id="@+id/imageView1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:src="@drawable/buy_course_kjzf" />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:background="@drawable/buy_arrow" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="@dimen/x10"
+                         android:layout_toRightOf="@+id/imageView1"
+                         android:text="快捷支付"
+                         android:textColor="@color/text_color_333333" />
+                 </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_addCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x15"
+                    android:background="@drawable/by_button"
+                    android:text="添加银行卡" />
+            </LinearLayout> -->
+
+
+
+<View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x20"
+                android:background="#F0F0F0"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:textSize="@dimen/x35"
+                    android:text="支付方式"
+                    android:textColor="@color/tabbar_item_text_normal" />
+
+                
+                <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+                <LinearLayout
+                    android:id="@+id/ll_zfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/buy_zfb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:text="支付宝支付"
+                        android:textColor="@color/main_primary" />
+                    
+                    <ImageView
+                        android:id="@+id/iv_paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+                    
+                    <!-- <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" /> -->
+                </LinearLayout>
+                
+                
+                <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+                
+                <LinearLayout
+                    android:id="@+id/ll_yue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/x17"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buy_u" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:text="账户余额支付"
+                        android:textColor="@color/main_primary" />
+                    
+                    <ImageView
+                        android:id="@+id/iv__yue_paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+                    
+                    <!-- <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" /> -->
+                </LinearLayout>
+
+                
+                <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x250"
+                android:background="#F0F0F0"
+                />
+                <!-- <LinearLayout
+                    android:id="@+id/ll_weichat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x25"
+                        android:background="@drawable/buy_weichat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_weight="1.0"
+                        android:text="微信支付"
+                        android:textColor="@color/main_primary" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:background="@drawable/buy_yl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x45"
+                        android:layout_weight="1.0"
+                        android:text="银联支付"
+                        android:textColor="@color/main_primary" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" />
+                </LinearLayout> -->
+            </LinearLayout>
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择支付方式"
+                    android:textColor="@color/tabbar_item_text_normal" />
+                
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/x10"
+                     android:layout_marginRight="@dimen/x20"
+                     android:layout_marginTop="@dimen/x20"
+                     android:orientation="horizontal" >
+
+                     <ImageView
+                         android:id="@+id/imageView1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:src="@drawable/buy_course_kjzf" />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:background="@drawable/buy_arrow" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="@dimen/x10"
+                         android:layout_toRightOf="@+id/imageView1"
+                         android:text="快捷支付"
+                         android:textColor="@color/text_color_333333" />
+                 </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_addCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x15"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/by_button"
+                    android:text="添加银行卡" />
+            </LinearLayout> -->
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:textSize="@dimen/x35"
+                    android:text="支付方式"
+                    android:textColor="@color/tabbar_item_text_normal" />
+ <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+                <LinearLayout
+                    android:id="@+id/ll_zfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/buy_zfb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:text="支付宝支付"
+                        android:textColor="@color/main_primary" />
+                    
+                    <ImageView
+                        android:id="@+id/iv_paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+                    
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" />
+                </LinearLayout>
+                
+                 <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+                <LinearLayout
+                    android:id="@+id/ll_yue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/buy_zfb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:text="账户余额支付"
+                        android:textColor="@color/main_primary" />
+                    
+                    <ImageView
+                        android:id="@+id/iv__yue_paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+                    
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" />
+                </LinearLayout>
+
+                
+                <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+                <LinearLayout
+                    android:id="@+id/ll_weichat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x25"
+                        android:background="@drawable/buy_weichat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x60"
+                        android:layout_weight="1.0"
+                        android:text="微信支付"
+                        android:textColor="@color/main_primary" />
+
+                     <ImageView
+                        android:id="@+id/iv__weichat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/coach_search_title_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x20"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:background="@drawable/buy_yl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x45"
+                        android:layout_weight="1.0"
+                        android:text="银联支付"
+                        android:textColor="@color/main_primary" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_arrow" />
+                </LinearLayout>
+            </LinearLayout> -->
+
+          <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="#F0F0F0"
+                />
+        </LinearLayout>
+    </ScrollView>
+    
+     
+  <LinearLayout
+      			android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:textSize="@dimen/x30"
+                    android:text="支付总价："
+                    android:textColor="@color/main_primary" />
+
+                <TextView
+                    android:id="@+id/tv_acount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textSize="@dimen/x32"
+                    android:text="99"
+                    android:textColor="@color/item_text_price" />
+
+                <Button
+                    android:id="@+id/bt_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/x33"
+                    android:background="@drawable/buy_button_buy"
+                    android:text="支 付" />
+            </LinearLayout>
+</RelativeLayout>

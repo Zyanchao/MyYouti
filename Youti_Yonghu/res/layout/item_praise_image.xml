@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	
+	 <com.youti.view.CircleImageView
+            android:id="@+id/iv_head"
+            android:minHeight="@dimen/x60"
+            android:minWidth="@dimen/x60"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@drawable/widget_dface"
+            android:layout_gravity="center_horizontal"
+            />
+</LinearLayout>

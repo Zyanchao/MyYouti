@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/index_head"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/x100"
+    android:background="#FEFEFE" >
+    
+     <RelativeLayout
+    android:id="@+id/rl_title"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/x100"
+    android:background="#FEFEFE" >
+    <RelativeLayout
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/title_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x45"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/home_bk" />
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/sp_back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="#333333"
+            android:textSize="@dimen/TextSize_18" />
+    </RelativeLayout>
+
+    <TextView 
+        android:layout_marginRight="@dimen/x20"
+        android:visibility="gone"
+        android:id="@+id/againpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="再次预约"
+        android:textSize="16sp"
+        android:textColor="#6049a1"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:id="@+id/title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_marginRight="@dimen/x25"
+        android:src="@drawable/sp_search"
+        />
+    
+    <ImageView 
+	     android:id="@+id/title_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/x25"
+        android:src="@drawable/show_share"
+	    />
+	<ImageView 
+	     android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/x25"
+        android:src="@drawable/sq_add"
+	    />
+    <com.youti.view.CircleImageView
+        android:id="@+id/title_menu_right"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x25"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@drawable/default_userhead" />
+    
+     <TextView
+        android:id="@+id/user_red"
+        android:layout_width="@dimen/Padding_12"
+        android:layout_height="@dimen/Padding_12"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x15"
+        android:visibility="gone"
+        android:background="@drawable/user_red"
+         />
+    
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_line" />
+     
+     </RelativeLayout>
+     
+     <LinearLayout
+         android:id="@+id/ll_search"
+         android:visibility="gone"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/x100"
+         android:orientation="horizontal"
+          android:background="@drawable/all_searchbar"
+          >
+         
+        <Button
+            android:id="@+id/bt_search"
+              android:gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/all_search"
+              />
+         
+         <EditText 
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/x100"
+          android:layout_marginLeft="10dp"
+          android:background="@drawable/all_searchbar"
+          android:hint="搜索项目或者教练名称"
+             />
+         
+         
+     </LinearLayout>
+
+</RelativeLayout>

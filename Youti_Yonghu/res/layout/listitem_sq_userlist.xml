@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/sq_user_touxiang"
+        android:layout_width="@dimen/ViewWidth_60"
+        android:layout_height="@dimen/ViewHeight_60"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/margin_8"
+        android:src="@drawable/sq_head" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sq_user_touxiang"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sq_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="addafs"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/sq_rzflag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sq_user_name"
+                android:src="@drawable/sq_rz" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/sq_state_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/sq_on" />
+
+            <TextView
+                android:id="@+id/sq_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sq_state_img"
+                android:text="@string/sq_on"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sq_xm_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sq_xiangmu"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_12" />
+
+            <TextView
+                android:id="@+id/sq_xm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_12" />
+
+            <ImageView
+                android:id="@+id/sq_listitem_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sq_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark_grey"
+                android:textSize="@dimen/TextSize_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

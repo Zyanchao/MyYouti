@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sp_bigImg"
+        android:layout_width="fill_parent"
+        android:layout_height="142dp"
+       
+         >
+		<ImageView 
+		    android:id="@+id/bigImg"
+		    android:layout_width="match_parent"
+		    android:layout_height="142dp"
+		     android:layout_marginBottom="@dimen/margin_4"
+		     android:background="@drawable/spxq_pic"
+		    />
+        <ImageView
+            android:id="@+id/sp_xiaobiantuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sp_tj" />
+
+        <TextView
+            android:id="@+id/sp_studyNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/Padding_4"
+            android:layout_marginRight="@dimen/margin_22"
+            android:layout_marginTop="@dimen/margin_12"
+            android:background="@drawable/bg_yellow_textview"
+            android:textSize="@dimen/TextSize_14"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="123人学过"
+             />
+
+        <TextView
+            android:id="@+id/sp_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:ellipsize="end"
+            android:maxWidth="90dp"
+            android:singleLine="true"
+            android:text="这是一个说明文字"
+            android:textColor="@color/white"
+            android:textSize="@dimen/TextSize_16" />
+    </RelativeLayout>
+</LinearLayout>

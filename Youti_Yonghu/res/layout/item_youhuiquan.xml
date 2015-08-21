@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myzh_yhq" />
+    
+     <TextView
+        android:layout_marginLeft="@dimen/x60"
+        android:id="@+id/fuhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="￥"
+        android:textColor="#6049a1"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/my_youhuiquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/fuhao"
+        android:text="10"
+        android:textColor="#6049a1"
+        android:textSize="40sp" />
+   
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_toRightOf="@id/my_youhuiquan" >
+
+        <TextView
+            android:id="@+id/hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包优惠券"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+        <!--
+             <ImageView 
+            android:layout_toRightOf="@id/hongbao"
+            android:id="@+id/iv"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/myzh_hb"
+            />
+        -->
+
+        <TextView
+            android:id="@+id/youxiaoqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hongbao"
+            android:text="有效期至："
+            android:textColor="#444444" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hongbao"
+            android:layout_toRightOf="@id/youxiaoqi"
+            android:text="2015.5.10"
+            android:textColor="#444444" />
+    </RelativeLayout>
+
+</RelativeLayout>

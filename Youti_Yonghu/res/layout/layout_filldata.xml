@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20" >
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="#666666" />
+
+        <TextView
+             android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/editdata"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_save"
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textColor="#6049a1" />
+    </LinearLayout>
+	<com.youti.view.CircleImageView
+            android:id="@+id/headportrait"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/widget_dface"
+            android:layout_gravity="center_horizontal"
+            />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x95"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/x30" >
+
+        <TextView
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:textColor="#666666" />
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+           android:layout_marginLeft="@dimen/x30"
+            android:text="Alexander"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+   
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+	
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x95"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30" >
+
+        <TextView
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textColor="#666666" />
+
+        <TextView
+             android:textSize="18sp"
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+             android:layout_marginLeft="@dimen/x30"
+            android:text="男"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x95"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x30" >
+
+        <TextView
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signature"
+            android:textColor="#666666" />
+
+        <EditText
+            android:id="@+id/et_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="介绍一下自己吧"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x95"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/x30" >
+
+        <TextView
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textColor="#666666" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+           android:layout_marginLeft="@dimen/x30"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x95"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       android:layout_marginLeft="@dimen/x30" >
+
+        <TextView
+             android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再次输入："
+            android:textColor="#666666" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+           android:layout_marginLeft="@dimen/x30"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+    
+
+
+</LinearLayout>

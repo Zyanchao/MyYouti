@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:youti="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/footer_one"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1.0"
+        android:clickable="true" 
+        android:focusable="true"
+        android:gravity="center"
+        android:background="@drawable/selector_buttom_footer"
+        android:orientation="horizontal" >
+
+
+       <!--  <ImageView
+            android:id="@+id/im_zixun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:background="@drawable/selector_buttom_zixun_btn" /> -->
+         <Button
+            android:id="@+id/bt_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="预约"
+            android:textColor="@color/text_color_select"
+            android:background="@drawable/kcxq_button_book" /> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_two"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:gravity="center"
+        android:drawSelectorOnTop="true"
+        android:background="@drawable/selector_buttom_footer"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/bt_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="购课"
+            android:textColor="@color/text_color_select"
+            android:background="@drawable/kcxq_button_buy" /> 
+    </LinearLayout>
+
+
+</LinearLayout>

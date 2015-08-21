@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:youti="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE" >
+
+    <com.youti.view.TitleBar
+        android:id="@+id/index_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        youti:btnShareVisible="false"
+        youti:btnsearchVisible="false"
+        youti:titleText="优体跑团" >
+    </com.youti.view.TitleBar>
+
+    
+    <com.ab.view.sliding.AbSlidingPlayView
+         android:layout_below="@id/index_titlebar"
+        android:id="@+id/mAbSlidingPlayView"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip" >
+    </com.ab.view.sliding.AbSlidingPlayView> 
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mAbSlidingPlayView"
+        android:background="#ffffff" >
+
+           <!--<ImageView
+          android:id="@+id/active_Img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x360"
+            android:scaleType="fitXY"
+            android:src="@drawable/kc_picture" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x360"
+            android:background="#26000000"
+            android:orientation="horizontal" >
+        </LinearLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/rl_heart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10" >
+
+            <TextView
+                android:id="@+id/tv_active_name"
+                style="@style/text_shadow_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x20"
+                android:text="优体跑团活动"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/x30" />
+
+            <LinearLayout
+                android:id="@+id/ll_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_active_name"
+                android:layout_marginTop="@dimen/x14"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_shadow_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:text="距离:"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    style="@style/text_shadow_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:text="25km"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+                
+                
+                
+                 <TextView
+                    style="@style/text_shadow_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:text="价格:"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/text_shadow_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:text="0元"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_distance"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_shadow_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:text="时间:"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/text_shadow_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-07-20"
+                       android:textColor="@color/text_color_333333"
+                        android:textSize="@dimen/x30" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        style="@style/text_shadow_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/x15"
+                        android:text="周三 16:30-19:00"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="@dimen/x30" />
+
+                    
+
+                </LinearLayout>
+                
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/more_arrow" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_time"
+                android:layout_marginTop="@dimen/x14"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_shadow_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:text="地址:"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/tv_arddess"
+                    style="@style/text_shadow_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.68"
+                    android:text="北京奧林匹克公園南門。。。。"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                   android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/x30" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_book"
+        android:layout_below="@id/rl_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x10"
+            android:text="20人已报名"
+            android:textColor="@color/main_primary"
+            android:textSize="@dimen/x30" />
+
+        <ListView
+            android:id="@+id/lv_baoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_book"
+        style="@style/Button.Yellow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:gravity="center"
+        android:text="报名"
+        android:textColor="@color/text_color_select" />
+
+</RelativeLayout>

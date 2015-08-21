@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x360"
+    android:background="#ffffff"
+    android:minHeight="@dimen/x360" >
+
+    <ImageView
+        android:id="@+id/kc_Img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x360"
+        android:scaleType="fitXY"
+        android:src="@drawable/kc_picture" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x360"
+        android:background="#26000000"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_heart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x30" >
+            
+             <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x40"
+            android:paddingLeft="@dimen/x30"
+            android:text="健身教练私教课"
+            style="@style/text_shadow_style"
+            android:textColor="#ffffff" />
+            
+            <TextView
+                android:id="@+id/kc_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x16"
+                android:background="@drawable/bg_yellow_textview"
+                android:shadowColor="#ff0000ff"
+                android:shadowDy="3"
+                android:gravity="center"
+                android:text="120元/小时"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15"
+                android:paddingTop="@dimen/x5"
+                android:paddingBottom="@dimen/x5"
+                android:textColor="#000000"
+                android:textSize="@dimen/x27" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x300"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/kc_location_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:drawableLeft="@drawable/toutiao_location1"
+                android:drawablePadding="@dimen/x10"
+                android:textSize="@dimen/x30"
+                style="@style/text_shadow_style"
+                android:text="2.1km"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_distance"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/kc_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x60"
+                android:textSize="@dimen/x30"
+                style="@style/text_shadow_style"
+                android:text="07-20 16:00-18:00"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/kc_studyCounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x30"
+                android:textSize="@dimen/x30"
+                style="@style/text_shadow_style"
+                android:text="12人学过"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

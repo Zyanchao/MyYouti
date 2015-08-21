@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="93dip"
+    android:layout_height="93dip">
+    
+    <ImageView android:id="@+id/image_global"
+        android:layout_width="79dip"
+        android:layout_height="79dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/community_send_add_bg_selector"
+        android:visibility="gone"
+        />
+    
+    <ImageView android:id="@+id/image_icon" 
+        android:layout_width="79dip"
+        android:layout_height="79dip"
+        android:layout_centerInParent="true"
+        />
+    
+    <ImageView android:id="@+id/check_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/community_send_card_cha_selector"
+        />
+    
+</RelativeLayout>

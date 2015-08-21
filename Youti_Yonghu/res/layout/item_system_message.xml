@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x174"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+	<ImageView 
+	    android:layout_marginTop="@dimen/x24"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/iv_systemheader"
+	    android:background="@drawable/wdxx_mishu"
+	    />
+	<TextView 
+	    android:layout_marginLeft="@dimen/x20"
+	    android:layout_marginTop="@dimen/x42"
+	    android:layout_toRightOf="@id/iv_systemheader"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/system_name"
+	    android:id="@+id/tv_name"
+	    android:textColor="#000000"
+	    android:textSize="@dimen/x30"
+	    />
+	<TextView 
+	    android:textColor="#88000000"
+	    android:layout_marginTop="@dimen/x24"
+	     android:layout_marginLeft="@dimen/x20"
+	    android:textSize="@dimen/x24"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/iv_systemheader"
+	    android:layout_below="@id/tv_name"
+	    android:id="@+id/tv_shortmessage"
+	    android:text="新春发红包了，点击免费领取！"
+	    />
+	<TextView 
+	    android:layout_marginRight="10dp"
+	    android:textSize="14dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="15:40"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginTop="@dimen/x42"
+	    />
+	<ImageView 
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/wdxx_fengexian"
+	    />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/rl"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ViewHeight_0.1"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/Grey" />
+
+                <TextView
+                    android:id="@+id/tv_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_14"
+                    android:paddingBottom="@dimen/Padding_6"
+                    android:paddingTop="@dimen/Padding_6"
+                    android:text="目录名称"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:textSize="@dimen/TextSize_16" />
+
+                <ImageView
+                    android:layout_width="@dimen/ImageWidth_16"
+                    android:layout_height="@dimen/ImageHeight_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_6"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/spxq_littleplay" />
+            </RelativeLayout>
+
+</LinearLayout>

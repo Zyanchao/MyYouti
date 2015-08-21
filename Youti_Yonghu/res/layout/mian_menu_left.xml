@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ll_menu_kc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_menu_kc"
+                
+                style="@style/menu_image_left"
+                android:src="@drawable/bk_kc" />
+
+            <TextView
+                android:layout_below="@id/iv_menu_kc"
+                style="@style/menu_text_left"
+                android:text="@string/left_menu_kc" />
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/ll_menu_jl"
+           android:clickable="true"
+            style="@style/menu_left"
+            >
+
+            <ImageView
+                android:id="@+id/iv_menu_jl"
+                style="@style/menu_image_left"
+                android:src="@drawable/bk_jl" />
+
+            <TextView
+                android:layout_below="@id/iv_menu_jl"
+                style="@style/menu_text_left"
+                android:text="@string/left_menu_jl"/>
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/ll_menu_sp"
+           android:clickable="true"
+            style="@style/menu_left"
+            >
+
+            <ImageView
+                android:id="@+id/iv_menu_sp"
+                style="@style/menu_image_left"
+                android:src="@drawable/bk_sp" />
+
+            <TextView
+                android:layout_below="@id/iv_menu_sp"
+                style="@style/menu_text_left"
+                android:text="@string/left_menu_sp" />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/ll_menu_sq"
+           android:clickable="true"
+           style="@style/menu_left"
+            >
+
+            <ImageView
+                android:id="@+id/iv_menu_sq"
+                style="@style/menu_image_left"
+                android:src="@drawable/bk_sq" />
+
+            <TextView
+                android:layout_below="@id/iv_menu_sq"
+                style="@style/menu_text_left"
+                android:text="@string/left_menu_sq" />
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>

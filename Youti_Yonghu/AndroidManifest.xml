@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.youti_geren"
+    android:versionCode="25"
+    android:versionName="v1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> 
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <!-- 百度地图 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.youti.appConfig.YoutiApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitle" >
+        <activity
+            android:name="com.youti.yonghu.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.WelcomeActivity"></activity>
+         <activity android:name="com.youti.yonghu.activity.MainMainActivity"
+             android:windowSoftInputMode="stateHidden"
+             ></activity>
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="2AMLeFP5FEc4fMiASHta4HXE" 
+            />
+        
+        <!-- CC3xmMMHTExxsmgBlcMoIXBj    dug key-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="yoti#yoti" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 聊天页面 -->
+        <activity
+            android:name="com.youti.chat.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="com.youti.chat.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+
+        <!-- 银联支付 -->
+       
+       <!--  <activity android:name="com.unionpay.uppay.PayActivity" >
+        </activity> -->
+       <!--   显示下载大图页面-->
+        <activity
+            android:name="com.youti.chat.activity.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.youti.chat.activity.BaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+    <!--   下载文件 -->
+        <activity
+            android:name="com.youti.chat.activity.ShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+      <!--   自定义的contextmenu -->
+        <activity
+            android:name="com.youti.chat.activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+       <!--  转发消息用户列表页面 -->
+        <activity
+            android:name="com.youti.chat.activity.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+       <!--  choose video -->
+        <activity
+            android:name="com.youti.chat.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.chat.activity.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.chat.activity.ShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity> 
+
+        
+          
+        <!-- 语音通话 -->
+        <activity
+            android:name="com.youti.chat.activity.VoiceCallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" >
+        </activity>
+        <!-- 视频通话 -->
+        <activity
+            android:name="com.youti.chat.activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <service android:name="com.youti.yonghu.download.DownloadService" >
+        </service>
+
+        <activity android:name="com.youti.yonghu.download.DownloadActivity" >
+        </activity>
+
+        <!-- 下载 -->
+        <activity android:name="com.youti.yonghu.download.DownloadManagerActivity" >
+        </activity>
+
+        <!-- 首页模块 -->
+        <activity android:name="com.youti.yonghu.activity.FastBookActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.MoreOptionActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ActivePageActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ActivePageGjcActivity" 
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ActiveDetailActivity" >
+        </activity>
+
+        <!-- 课程模块 -->
+        <activity
+            android:name="com.youti.yonghu.activity.CourseListActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.CourseDetailActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.WanshanCoachActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.BuyCoachCourseActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.BuyPackageCourseActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.BuyCourseActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ClubDetailActivity" >
+        </activity>
+
+        <!-- 订单模块 私教课 订单 -->
+        <activity android:name="com.youti.yonghu.activity.OrderCoachActivity" >
+        </activity>
+           <activity android:name="com.youti.yonghu.activity.OrderActiveActivity" >
+        </activity>
+        <!-- 教练模块 -->
+        <activity
+            android:name="com.youti.yonghu.activity.CoachListActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.CoachDetailActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ToutiaoCoachActivity" >
+        </activity>
+        <!-- 视频 模块 -->
+        <activity android:name="com.youti.yonghu.activity.VideoWaiteActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.VideoDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.VideoListActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.SelectCityActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- 社区 模块 -->
+        <activity
+            android:name="com.youti.yonghu.activity.CommunityListActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- 个人 中心模块 -->
+        <activity android:name="com.youti.yonghu.activity.OtherPersonCenterActivity"></activity>
+        <activity
+            android:name="com.youti.yonghu.activity.FeedbackActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.EditDataActivity" 
+             android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyCourseActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyCoachActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyMessageChatActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyMessageActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyDownloadActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyFavoriateActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ForgetPasswordthreeActivity" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.ForgetPasswordtwoActivity" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.PersonCenterActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.PersonCenterTestActivity"></activity>
+        <activity
+            android:name="com.youti.yonghu.activity.ModifyPasswordActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MoreActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyAccountActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.OrderDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.CommentActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.SimpleActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.MyIssuedPhotoActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.VideoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.youti.yonghu.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.youti.yonghu.activity.SignActivityFirst"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.youti.yonghu.activity.SignActivitySecond"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.PhotoDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.CourseOrderDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.IssuePhotoActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.RechargeActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.ThirdLoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.youti.yonghu.activity.UserProtocol" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.FillDataActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.fragment.ThirdLoginTwoActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.PhotoShowActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.ForgetPasswordActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.SelectLessonTimeActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 我的账户 -->
+
+
+  <activity android:name="com.youti.yonghu.activity.YuePayActivity" >
+        </activity>
+
+        <activity android:name="com.youti.yonghu.activity.UpAccountActivity" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.SettingChoiceRechargeMoneyActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.youti.yonghu.activity.SettingPayPassManagerActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <receiver android:name="com.youti.yonghu.download.DownloadBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.youti_yonghu.download" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <!-- 第三方登录  5562cff467e58eca0f000188 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="543f3377fd98c5e08e00860e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="wandoujia" />
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <!-- 微信回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <!-- 1103176396 -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="K1NDOFhaztPcCAkl" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.youti.yonghu.activity.VideoSearchActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

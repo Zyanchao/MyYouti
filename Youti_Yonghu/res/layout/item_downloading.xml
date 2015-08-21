@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x208"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_marginBottom="@dimen/x20"
+     >
+     <ImageView 
+         android:layout_centerVertical="true"
+         
+         android:id="@+id/iv_select"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/wdxz_select"
+         />
+    <ImageView 
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_toRightOf="@id/iv_select"
+        android:id="@+id/iv_downloading"
+        android:layout_width="@dimen/x340"
+        android:layout_height="@dimen/x168"
+        android:background="@drawable/spxq_pic"
+        />
+	<TextView 
+	    android:id="@+id/tv_download_name"
+	    android:layout_marginTop="@dimen/x40"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="@dimen/x30"
+	    android:layout_toRightOf="@id/iv_downloading"
+	    android:textSize="@dimen/x30"
+	    android:text="健身秘诀"
+	    
+	    />
+	<TextView 
+	    android:id="@+id/tv_downloading"
+	    android:textSize="@dimen/x24"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/downloading"
+	    android:layout_toRightOf="@id/iv_downloading"
+	    android:layout_marginLeft="@dimen/x30"
+	    android:layout_below="@id/tv_download_name"
+	    android:layout_marginTop="@dimen/x20"
+	    />
+	<TextView 
+	    android:id="@+id/tv_percent"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#fc2727"
+	    android:textSize="@dimen/x24"
+	    android:text="30%"
+	    android:layout_toRightOf="@id/tv_downloading"
+	    android:layout_marginLeft="@dimen/x10"
+	    android:layout_below="@id/tv_download_name"
+	    android:layout_marginTop="@dimen/x20"
+	    />
+	
+	<TextView 
+	     android:id="@+id/tv_process"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#fc2727"
+	    android:textSize="@dimen/x24"
+	    android:text="100M"
+	    android:layout_toRightOf="@id/tv_percent"
+	    android:layout_marginLeft="@dimen/x30"
+	    android:layout_below="@id/tv_download_name"
+	    android:layout_marginTop="@dimen/x20"
+	    />
+	
+	<TextView 
+	     android:id="@+id/tv_totalsize"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#666666"
+	    android:textSize="@dimen/x24"
+	    android:text="/386M"
+	    android:layout_toRightOf="@id/tv_process"
+	    android:layout_below="@id/tv_download_name"
+	    android:layout_marginTop="@dimen/x20"
+	    />
+	
+</RelativeLayout>

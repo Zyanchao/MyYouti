@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/Padding_4" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ViewHeight_0.1"
+        android:layout_alignParentTop="true"
+        android:background="@color/Grey" />
+
+    <ImageView
+        android:id="@+id/spxq_zjkc_item_img"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_4"
+        android:paddingLeft="@dimen/Padding_14"
+        android:scaleType="fitXY"
+        android:src="@drawable/spxq_class_pic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/spxq_zjkc_item_img"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/Padding_6" >
+
+        <TextView
+            android:id="@+id/spxq_zj_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="课程标题"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/spxq_zj_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/TextLength_70"
+            android:singleLine="true"
+            android:text="课程介绍"
+            android:textColor="@color/text_color_grey"
+            android:textSize="12sp" />
+        
+    </LinearLayout>
+	
+</RelativeLayout>

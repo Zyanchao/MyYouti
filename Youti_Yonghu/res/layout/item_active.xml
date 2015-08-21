@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x20"
+        android:paddingBottom="@dimen/x10"
+        android:paddingTop="@dimen/x10" >
+
+        <com.youti.view.CircleImageView
+            android:id="@+id/img_headportrait"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/widget_dface" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@+id/img_headportrait"
+            android:paddingBottom="@dimen/x15"
+            android:paddingLeft="@dimen/x15"
+            android:paddingTop="@dimen/x15" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:text="Asbasett"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/TextSize_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_alr_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="36dp"
+            android:text="2015-06-09"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/TextSize_12"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/wdjl_fengexian" />
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

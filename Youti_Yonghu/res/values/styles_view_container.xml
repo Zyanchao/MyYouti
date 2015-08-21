@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+        
+    <!-- ViewContainer Style -->
+    <style name="StyleViewContainerText">
+        <item name="android:textColor">#888888</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

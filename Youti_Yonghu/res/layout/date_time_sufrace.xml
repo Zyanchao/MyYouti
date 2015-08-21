@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x340"
+    android:background="#fff4ca"
+    android:orientation="vertical" >
+
+   <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+
+        <ImageView
+            android:id="@+id/im_de"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/add_button_huis" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x24"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginBottom="@dimen/x10"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_buttom_date_time" >
+
+            <TextView
+                android:id="@+id/tv_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="12.1"
+                android:textColor="#6049a1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:text="星期一"
+                android:textColor="#6049a1"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp" 
+            android:background="@drawable/selector_buttom_date_time">
+
+            <TextView
+                android:id="@+id/tv_date2"
+                style="@style/xingqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.1" />
+
+            <TextView
+                android:id="@+id/Tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:text="星期二"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_buttom_date_time" >
+
+            <TextView
+                android:id="@+id/tv_date3"
+                style="@style/xingqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.1" />
+
+            <TextView
+                android:id="@+id/Tv_3"
+                style="@style/riqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期三" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_buttom_date_time"
+             >
+
+            <TextView
+                android:id="@+id/tv_date4"
+                style="@style/xingqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.1"
+                 />
+
+            <TextView
+                android:id="@+id/Tv_4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/riqi_text"
+                android:text="星期四" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_buttom_date_time"
+             >
+
+            <TextView
+                android:id="@+id/tv_date5"
+                style="@style/xingqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.1" />
+
+            <TextView
+                android:id="@+id/Tv_5"
+                style="@style/riqi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期五" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x20"
+         android:layout_marginRight="@dimen/x20"
+          android:layout_marginBottom="@dimen/x10"
+        android:listSelector="#00000000"
+        android:numColumns="4" >
+    </GridView>
+
+</LinearLayout>

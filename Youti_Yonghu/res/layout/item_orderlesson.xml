@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youti.view.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/x240"
+    android:orientation="horizontal" >
+
+    <com.youti.view.FrontLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/x240" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/x240"
+            android:orientation="horizontal" >
+
+            <com.youti.view.CircleImageView
+                android:id="@+id/head_protrait"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x150"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/sq_head" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x28"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/coach_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刘海然"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/x38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/x38" />
+
+                    <TextView
+                        android:id="@+id/coach_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网球"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/x38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="教练"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/x38" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="课程时长："
+                         android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                         android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小时"
+                         android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="课程时间："
+                         android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-22 18:00"
+                        android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                         android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19:00"
+                         android:textSize="@dimen/x30"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999999"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/cancellesson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/qxyk_selector" />
+
+                    <Button
+                        android:id="@+id/endlesson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x44"
+                        android:background="@drawable/jsyk_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.youti.view.FrontLayout>
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x240"
+        android:orientation="horizontal" >
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_cancel"
+            android:layout_width="@dimen/x240"
+            android:layout_height="fill_parent"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="@dimen/x240"
+            android:layout_height="fill_parent"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</com.youti.view.SwipeLayout>

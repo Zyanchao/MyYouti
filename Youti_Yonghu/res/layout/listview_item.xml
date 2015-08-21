@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:gravity="center_vertical"
+    >
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:background="#999999" />
+
+    <TextView 
+        android:id="@+id/new_mc"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="体能训练"
+        android:gravity="center"
+         android:textColor="#999999"
+         android:textSize="16sp"
+        />
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="10dp"
+        android:background="#999999" />
+    
+    </LinearLayout>
+    <com.youti.view.NoScrollGridView
+        android:id="@+id/listview_item_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="5dip"
+        android:numColumns="4"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:verticalSpacing="5dip" />
+
+</LinearLayout>

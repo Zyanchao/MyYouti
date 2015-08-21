@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/x20"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_height="@dimen/x260" >
+
+    <ImageView
+        android:id="@+id/iv_coach_head"
+        android:layout_width="@dimen/x215"
+        android:layout_height="@dimen/x215"
+        android:background="@drawable/userhome_head" />
+
+    <TextView
+        android:id="@+id/tv_coach_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_toRightOf="@id/iv_coach_head"
+        android:text="辛迪瑞拉"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/tv_coach_xiangmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_coach_name"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_toRightOf="@id/iv_coach_head"
+        android:text="瑜伽教练"
+        android:textColor="#666666" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_coach_xiangmu"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_toRightOf="@id/iv_coach_head"
+        android:background="@drawable/userhome_pl"
+        android:gravity="center"
+        android:text="&quot;老师人很nice，非常棒的体验！&quot;"
+        android:textColor="#333333"
+        android:textSize="@dimen/x30" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_coach_xiangmu"
+        android:layout_alignBottom="@+id/tv_coach_xiangmu"
+        android:layout_alignParentRight="true"
+        android:text="2015.4.10"
+        android:layout_marginRight="@dimen/x60"
+        android:textColor="#666666" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/news_item_bg"
+    android:orientation="vertical" >
+    
+
+	    <TextView 
+	        
+	        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130"
+        android:text="获取图片的方式"
+        android:textColor="#333333"
+        android:id="@+id/tv_title"
+        android:textSize="18sp"
+        />
+   		 <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#666666"
+        />
+	
+     <TextView 
+         android:id="@+id/tv_takephoto"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130"
+        android:text="拍照"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        />
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999"
+        />
+     <TextView 
+         android:id="@+id/tv_selectphoto"
+         android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130"
+        android:text="从手机中选择"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        />
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999"
+        />
+     <TextView 
+         android:id="@+id/tv_back"
+         android:gravity="center"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:text="返回"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        />
+</LinearLayout>
